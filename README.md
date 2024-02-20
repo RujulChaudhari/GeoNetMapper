@@ -9,31 +9,35 @@ Welcome to this step-by-step tutorial on using GeoIP with Wireshark to analyze n
 Before you begin, make sure you have the following installed:
 
 - [Wireshark](https://www.wireshark.org/)
-- [Python](https://www.python.org/)
-- [GeoIP Database](https://dev.maxmind.com/geoip/geoip2/geolite2/) (for IP to location mapping)
+- [GeoLite Database](https://dev.maxmind.com/geoip/geoip2/geolite2/) (for IP to location mapping)
 
 ## Step 1: Install Wireshark
 
 Download and install Wireshark from the official website: [Wireshark Download](https://www.wireshark.org/download.html).
 
-## Step 2: Capture Network Traffic
+## Step 2: Install GeoLite Databases
+1. Go to [GeoIP](https://dev.maxmind.com/geoip/geoip2/geolite2/) to download the databases.
+2. You need the GeoLite-ASN, GeoLite-City, and GeoLite-Country databases.
 
-1. Open Wireshark and select the network interface you want to monitor.
-2. Click on the "Start" button to begin capturing network traffic.
+## Step 3: Configure GeoLite in WireShark
 
-## Step 3: Analyze Captured Data
+1. Start WireShark, go to the "Edit" tab and go to the Preferences menu.
+2. There you want to click on "Name Resolution". You will see "MaxMind Databases Directories" at the bottom.
+3. Click on the "edit" button next to it. And select the directory where you installed the GeoLite databases.
 
-1. Let Wireshark capture data for a reasonable amount of time.
-2. Stop the capture and analyze the captured packets.
+## Step 4: Scanning the Network
 
-## Step 4: Export IP Addresses
+1. Once GeoLite has been added to WireShark. Go ahead and run a scan.
+2. Once you have enough data. Go ahead and stop the scan.
+3. Here you will see multiple Ips listed. If you click on anyone of them and select the "Ipv4" option. You will see towards the botton that the GeoLite data associated with the ips.
 
-1. Export the list of IP addresses from Wireshark.
-2. Save the list to a text file.
+## Step 5: Mapping the Ips out on the web browser.
 
-## Step 5: Install GeoIP Python Library
+1. In Wireshark, click on the "Statistics" menu and select "Endpoints"
+2. Here on the left-hand side you will see a "Map" optin. Go ahead and select it and hit "Open in browser".
+3. This will give you a visual of where each connection is coming from to your netowrk.
 
-Install the `geoip2` Python library for IP to location mapping:
 
-```bash
-pip install geoip2
+
+
+# Enjoy!
