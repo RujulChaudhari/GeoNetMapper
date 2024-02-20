@@ -1,4 +1,4 @@
-# Tutorial: Network Scanning and Mapping with GeoIP and Wireshark
+# Tutorial: Network Scanning and Mapping with GeoLite and Wireshark
 
 ## Introduction
 
