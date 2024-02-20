@@ -24,18 +24,25 @@ Download and install Wireshark from the official website: [Wireshark Download](h
 1. Start WireShark, go to the "Edit" tab and go to the Preferences menu.
 2. There you want to click on "Name Resolution". You will see "MaxMind Databases Directories" at the bottom.
 3. Click on the "edit" button next to it. And select the directory where you installed the GeoLite databases.
+![](https://i.imgur.com/3Opd7c6.png)
 
 ## Step 4: Scanning the Network
 
 1. Once GeoLite has been added to WireShark. Go ahead and run a scan.
 2. Once you have enough data. Go ahead and stop the scan.
-3. Here you will see multiple Ips listed. If you click on anyone of them and select the "Ipv4" option. You will see towards the botton that the GeoLite data associated with the ips.
+3. Here you will see multiple Ips listed. If you click on anyone of them and select the "Ipv4" option. You will see towards the botton that the GeoLite data associated with the ips.<br>
+<ins>**Note**:</ins> You will **NOT** see this info if the ip is a private Ip, It will only be displayed for Public Ips. <br>
+![](https://i.imgur.com/IhlILGo.png)
+![](https://i.imgur.com/23YlWN3.png)
 
 ## Step 5: Mapping the Ips out on the web browser.
 
 1. In Wireshark, click on the "Statistics" menu and select "Endpoints"
 2. Here on the left-hand side you will see a "Map" optin. Go ahead and select it and hit "Open in browser".
-3. This will give you a visual of where each connection is coming from to your netowrk.
+3. This will give you a visual of where each connection is coming from to your netowrk. <br>
+<ins>**Note**:</ins> The amount of connections will depend on your network size. If it is a private home network, you probably will not see too many connections. Where as if it is a Company network you might have quite a bit.
+![](https://i.imgur.com/4WcWhxc.png)
+![](https://i.imgur.com/QpHFsTW.png)
 
 
 
